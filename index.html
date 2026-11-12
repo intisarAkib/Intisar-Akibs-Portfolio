@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intisar Uddin Akib | Marketing Student, Leadership Facilitator &amp; Designer</title>
+<meta name="description" content="Portfolio of Intisar Uddin Akib, BBA Marketing student at the University of Dhaka, leadership facilitator at BYLC, Millennium Fellow and designer.">
+<meta property="og:title" content="Intisar Uddin Akib | Portfolio">
+<meta property="og:description" content="Marketing student, leadership facilitator and designer based in Dhaka.">
+<meta property="og:image" content="portrait.jpg">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b1f3a; --navy-2:#12294a; --steel:#3f6b9a; --mist:#e9eff6; --ivory:#f7f5f0;
+  --champagne:#c6a875; --ink:#14233a; --muted:#5b6b82; --line:#d9e1ec;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--ivory);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--steel);font-weight:600;margin-bottom:14px}
+h2{font-family:var(--serif);font-size:clamp(34px,5vw,48px);line-height:1.1;color:var(--navy);font-weight:600;margin-bottom:12px}
+.lead{color:var(--muted);max-width:640px;margin-bottom:44px}
+.rule{width:56px;height:2px;background:var(--champagne);margin:18px 0 32px}
+
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:50;transition:.3s}
+header.solid{background:rgba(11,31,58,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;font-family:var(--serif);font-size:20px;font-weight:600;letter-spacing:.02em}
+.brand img{width:34px;height:34px;border-radius:8px}
+.menu-btn{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;font:500 13px var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:9px 16px;border-radius:999px;cursor:pointer}
+.overlay{position:fixed;inset:0;background:var(--navy);z-index:60;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:.35s}
+.overlay.open{opacity:1;pointer-events:auto}
+.overlay a{font-family:var(--serif);font-size:clamp(34px,7vw,54px);color:#fff;text-decoration:none;padding:4px 12px;transition:.2s}
+.overlay a:hover{color:var(--champagne)}
+.close{position:absolute;top:20px;right:24px;background:none;border:1px solid rgba(255,255,255,.35);color:#fff;font:500 13px var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:9px 16px;border-radius:999px;cursor:pointer}
+
+/* hero */
+.hero{background:radial-gradient(1200px 600px at 80% 20%,#1b3b66 0%,var(--navy) 60%);color:#fff;padding:140px 0 100px;min-height:100vh;display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.hero .eyebrow{color:var(--champagne)}
+.hero h1{font-family:var(--serif);font-size:clamp(46px,8vw,88px);line-height:1;font-weight:600;letter-spacing:-.01em}
+.hero p.tag{margin-top:22px;font-size:19px;color:#c9d6e6;max-width:520px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;letter-spacing:.03em;transition:.25s;border:1px solid transparent}
+.btn.gold{background:var(--champagne);color:var(--navy)}
+.btn.gold:hover{background:#d8bd8d}
+.btn.ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.portrait{position:relative}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:200px 200px 24px 24px;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.portrait::after{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--champagne);border-radius:210px 210px 28px 28px;z-index:-1;opacity:.7}
+
+/* about */
+.about{background:var(--ivory)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.about p{color:#2c3d57;margin-bottom:16px;font-size:17px}
+.facts{display:grid;gap:14px}
+.fact{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+.fact small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--steel);font-weight:600}
+.fact strong{font-family:var(--serif);font-size:22px;color:var(--navy);font-weight:600}
+.fact span{display:block;color:var(--muted);font-size:14px}
+
+/* experience */
+.exp{background:var(--mist)}
+.timeline{display:grid;gap:22px}
+.item{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;display:grid;grid-template-columns:70px 1fr;gap:22px}
+.num{font-family:var(--serif);font-size:42px;color:var(--champagne);line-height:1}
+.item h3{font-family:var(--serif);font-size:26px;color:var(--navy);font-weight:600;line-height:1.2}
+.meta{color:var(--steel);font-size:13px;font-weight:600;letter-spacing:.06em;margin:4px 0 12px}
+.item ul{padding-left:18px;color:#2c3d57}
+.item li{margin-bottom:6px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:22px}
+.gallery img{width:100%;height:210px;object-fit:cover;border-radius:12px;cursor:zoom-in;transition:.3s}
+.gallery img:hover{transform:scale(1.02)}
+
+/* work */
+.work{background:var(--navy);color:#fff}
+.work h2{color:#fff}.work .lead{color:#b8c8dd}.work .eyebrow{color:var(--champagne)}
+.case{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:34px;margin-bottom:28px}
+.case h3{font-family:var(--serif);font-size:32px;font-weight:600}
+.case .meta{color:var(--champagne)}
+.case p{color:#c9d6e6;max-width:760px;margin-bottom:12px}
+.case ul{padding-left:18px;color:#c9d6e6;margin-bottom:6px}
+.case li{margin-bottom:6px}
+.pill{display:inline-block;border:1px solid rgba(198,168,117,.5);color:var(--champagne);border-radius:999px;font-size:12px;padding:4px 12px;margin:0 6px 6px 0}
+.case .gallery{grid-template-columns:repeat(4,1fr)}
+.case .gallery img{height:240px}
+.case .gallery.wide{grid-template-columns:repeat(2,1fr)}
+.case .gallery.wide img{height:300px}
+.soon{border:1px dashed rgba(255,255,255,.25);border-radius:24px;padding:34px;text-align:center;color:#b8c8dd}
+.soon h3{font-family:var(--serif);color:#fff;font-size:28px;margin-bottom:6px}
+
+/* skills */
+.skills{background:var(--ivory)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h4{font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:10px}
+.card li{list-style:none;color:#2c3d57;padding:5px 0;border-bottom:1px solid var(--line);font-size:15px}
+.card li:last-child{border:0}
+.ach{margin-top:48px}
+.ach .card{display:flex;gap:16px;align-items:center}
+.ach .star{font-size:28px;color:var(--champagne)}
+
+/* contact */
+.contact{background:var(--mist)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}
+.clist{display:grid;gap:14px;margin-top:8px}
+.clist a{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;transition:.2s}
+.clist a:hover{border-color:var(--steel);transform:translateX(4px)}
+.clist small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--steel);font-weight:600}
+form{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;gap:14px}
+label{font-size:13px;font-weight:600;color:var(--navy)}
+input,select,textarea{width:100%;margin-top:6px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:var(--ivory);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--steel);border-color:transparent}
+button.send{border:0;cursor:pointer;background:var(--navy);color:#fff;padding:14px;border-radius:999px;font:600 14px var(--sans);letter-spacing:.04em}
+button.send:hover{background:var(--steel)}
+footer{background:var(--navy);color:#9fb2cc;text-align:center;padding:30px 24px;font-size:14px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(5,12,24,.92);z-index:80;display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-height:92vh;max-width:94vw;border-radius:10px}
+
+.reveal{opacity:0;transform:translateY(20px);transition:.7s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:860px){
+  section{padding:72px 0}
+  .hero{padding-top:110px}
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .portrait{max-width:340px;margin:0 auto;order:-1}
+  .item{grid-template-columns:1fr;gap:8px;padding:24px}
+  .case .gallery{grid-template-columns:repeat(2,1fr)}
+  .case .gallery img{height:180px}
+  .case .gallery.wide img{height:200px}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="logo.png" alt="IA logo">Intisar Akib</a>
+    <button class="menu-btn" id="openMenu">Menu</button>
+  </div>
+</header>
+
+<div class="overlay" id="menu">
+  <button class="close" id="closeMenu">Close</button>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#work">Work</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Portfolio · Dhaka, Bangladesh</div>
+      <h1>Intisar Uddin Akib</h1>
+      <p class="tag">Marketing student, leadership facilitator and designer. BBA Marketing at the University of Dhaka.</p>
+      <div class="cta">
+        <a class="btn gold" href="#work">Explore my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="portrait"><img src="portrait.jpg" alt="Portrait of Intisar Uddin Akib"></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="eyebrow">About</div>
+      <h2>Marketing thinking, built on people.</h2>
+      <div class="rule"></div>
+      <p>I am a BBA Marketing student at the University of Dhaka who learns best by doing. My work spans leadership training, community projects, campus events and sales, and each one has taught me how to listen first and then communicate clearly.</p>
+      <p>I enjoy turning ideas into something people can see and use, from awareness posters and presentations to news posts and campaign visuals. I am also comfortable with data, using advanced Excel to find the story behind the numbers.</p>
+      <p>Recently I facilitated young leaders at BYLC, and I now lead a plastic pollution project on campus as a Millennium Fellow, and look for ways to bring marketing and social impact together.</p>
+    </div>
+    <div class="facts reveal">
+      <div class="fact"><small>Education</small><strong>University of Dhaka</strong><span>BBA, Marketing · 2023–2027 (expected) · CGPA 3.50 through 2nd year</span></div>
+      <div class="fact"><small>Now</small><strong>Millennium Fellow, Class of 2026</strong><span>Previously Leadership Facilitator at BYLC</span></div>
+      <div class="fact"><small>Focus</small><strong>Marketing · Leadership · Design</strong><span>Community projects, content, data analysis</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="exp" id="experience">
+  <div class="wrap">
+    <div class="eyebrow">Experience</div>
+    <h2>Where I have worked and led.</h2>
+    <p class="lead">Roles in leadership training, media and design, and student-led social impact.</p>
+    <div class="timeline">
+
+      <div class="item reveal">
+        <div class="num">01</div>
+        <div>
+          <h3>Leadership Facilitator, BYLC</h3>
+          <div class="meta">AUG 2026 – SEPT 2026 · BANGLADESH YOUTH LEADERSHIP CENTER</div>
+          <ul>
+            <li>Facilitated BBLTJ 51, BYLC's leadership program, for a batch of 93 students.</li>
+            <li>Directly observed 10 students and supported their learning of soft skills such as leadership, teamwork and public speaking.</li>
+            <li>Collected participants' work and guided them through their projects.</li>
+          </ul>
+          <div class="gallery">
+            <img src="facilitator-1.jpg" alt="Facilitating a group discussion at BYLC" loading="lazy">
+            <img src="facilitator-2.jpg" alt="At a BYLC ceremony" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="item reveal">
+        <div class="num">02</div>
+        <div>
+          <h3>Millennium Fellow, Class of 2026</h3>
+          <div class="meta">AUG 2026 – PRESENT · UN ACADEMIC IMPACT &amp; MILLENNIUM CAMPUS NETWORK</div>
+          <ul>
+            <li>Selected for a leadership program that supports student-led projects advancing the UN Sustainable Development Goals.</li>
+            <li>Leading "Green and Clean," a campus project against plastic pollution at the University of Dhaka.</li>
+            <li>Building leadership and social-impact skills through the Fellowship curriculum.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item reveal">
+        <div class="num">03</div>
+        <div>
+          <h3>Journalist &amp; Graphic Designer, InfoGram</h3>
+          <div class="meta">DEC 2024 – JUN 2025</div>
+          <ul>
+            <li>Researched trending news topics from reliable sources.</li>
+            <li>Wrote news posts for social media audiences.</li>
+            <li>Designed graphics and visuals for articles and campaigns.</li>
+            <li>Worked with the team to keep a consistent brand tone and style.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item reveal">
+        <div class="num">04</div>
+        <div>
+          <h3>Graduate, BBLT 51, BYLC</h3>
+          <div class="meta">JUL – SEP 2025 · BUILDING BRIDGES THROUGH LEADERSHIP TRAINING</div>
+          <ul>
+            <li>Completed BYLC's eight-week leadership program, building skills in leadership, public speaking, project management and data analysis.</li>
+            <li>Designed and presented the "Leadership in Action" (LIA) community project, Project Aparajita.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="eyebrow">Selected Work</div>
+    <h2>Projects and wins.</h2>
+    <p class="lead">Community impact, campus leadership and a championship on the sales floor.</p>
+
+    <article class="case reveal">
+      <h3>Project Aparajita</h3>
+      <div class="meta">LEADERSHIP IN ACTION PROJECT · BBLT 51 · KORAIL SLUM, DHAKA</div>
+      <p>A women's empowerment and maternal and child health project, run by a 10-member team. We worked directly with the community through interviews, surveys and focus group discussions, then built awareness materials in Bangla.</p>
+      <div>
+        <span class="pill">Community research</span><span class="pill">Awareness design</span><span class="pill">Public health</span><span class="pill">Team of 10</span>
+      </div>
+      <ul>
+        <li>Reached 259 beneficiaries against a target of 120, plus 24,000+ digital views.</li>
+        <li>Designed awareness posters and the final presentation slides, and co-developed banners and leaflets.</li>
+        <li>Supported a Facebook webinar to extend the project's reach online.</li>
+      </ul>
+      <div class="gallery">
+        <img src="aparajita-2.jpg" alt="Project Aparajita team with community members" loading="lazy">
+        <img src="aparajita-1.jpg" alt="Team member speaking with residents during fieldwork" loading="lazy">
+        <img src="aparajita-3.jpg" alt="Putting up an awareness poster" loading="lazy">
+        <img src="aparajita-4.jpg" alt="Installing a maternal care awareness board" loading="lazy">
+      </div>
+    </article>
+
+    <article class="case reveal">
+      <h3>Sales Fair Champion</h3>
+      <div class="meta">50 YEAR CELEBRATION OF MARKETING DEPARTMENT · UNIVERSITY OF DHAKA · DEC 2024</div>
+      <p>Our team won the championship at the sales fair while managing the Akij Essentials stall. Alongside the stall, I facilitated a departmental debate competition, ran my own game shop that drew heavy foot traffic, and supported logistics, communications and vendor management across the program.</p>
+      <div>
+        <span class="pill">Sales</span><span class="pill">Event management</span><span class="pill">Vendor management</span><span class="pill">Teamwork</span>
+      </div>
+      <div class="gallery" style="margin-top:14px">
+        <img src="salesfair-3.jpg" alt="Team lifting the championship trophy" loading="lazy">
+        <img src="salesfair-2.jpg" alt="Team with trophy and certificates" loading="lazy">
+        <img src="salesfair-4.jpg" alt="Team at the Akij Essentials stall" loading="lazy">
+        <img src="salesfair-1.jpg" alt="Team celebrating with the trophy" loading="lazy">
+      </div>
+    </article>
+
+    <article class="case reveal">
+      <h3>Green and Clean</h3>
+      <div class="meta">MILLENNIUM FELLOWSHIP PROJECT · UNIVERSITY OF DHAKA · ONGOING</div>
+      <p>A student-led campus initiative to reduce plastic pollution at the University of Dhaka and promote a cleaner campus, developed through the Millennium Fellowship in support of the UN Sustainable Development Goals.</p>
+      <div><span class="pill">Sustainability</span><span class="pill">Campus campaign</span><span class="pill">SDGs</span></div>
+    </article>
+
+    <div class="soon reveal">
+      <h3>Data &amp; Analysis Projects</h3>
+      <p>Excel and Power Query case work will be added here soon.</p>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="eyebrow">Skills &amp; Achievements</div>
+    <h2>Tools I work with.</h2>
+    <p class="lead">Analysis, design and documentation, with AI tools in my daily workflow.</p>
+    <div class="cols">
+      <div class="card reveal"><h4>Data Analytics</h4><ul><li>Microsoft Excel (Advanced)</li><li>Power Query &amp; Power Pivot</li><li>Pivot Tables</li><li>Google Sheets</li></ul></div>
+      <div class="card reveal"><h4>Design &amp; Presentation</h4><ul><li>Canva</li><li>Microsoft PowerPoint</li></ul></div>
+      <div class="card reveal"><h4>Documentation</h4><ul><li>Microsoft Word</li><li>Google Workspace (Docs, Forms)</li></ul></div>
+      <div class="card reveal"><h4>AI Literacy</h4><ul><li>Claude</li><li>Perplexity</li><li>NotebookLM</li></ul></div>
+    </div>
+    <div class="ach cols">
+      <div class="card reveal"><span class="star">★</span><div><h4 style="margin:0">Champion, Sales Fair</h4><span style="color:var(--muted);font-size:14px">Akij Essentials stall · 2024</span></div></div>
+      <div class="card reveal"><span class="star">★</span><div><h4 style="margin:0">Millennium Fellow</h4><span style="color:var(--muted);font-size:14px">Class of 2026</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="eyebrow">Contact</div>
+      <h2>Let's talk.</h2>
+      <p class="lead" style="margin-bottom:20px">Open to internships, collaborations and leadership or impact projects.</p>
+      <div class="clist">
+        <a href="mailto:intisar.akib@gmail.com"><div><small>Email</small>intisar.akib@gmail.com</div></a>
+        <a href="tel:+8801613897801"><div><small>Phone</small>+880 1613 897801</div></a>
+        <a href="https://www.linkedin.com/in/intisar-akib" target="_blank" rel="noopener"><div><small>LinkedIn</small>linkedin.com/in/intisar-akib</div></a>
+        <a href="https://www.instagram.com/intisar_akib" target="_blank" rel="noopener"><div><small>Instagram</small>@intisar_akib</div></a>
+        <a href="#contact"><div><small>Location</small>Dhaka-1000, Bangladesh</div></a>
+      </div>
+    </div>
+    <form class="reveal" id="cform">
+      <label>Your name<input name="name" required></label>
+      <label>Your email<input type="email" name="email" required></label>
+      <label>Inquiry type
+        <select name="type"><option>Collaboration</option><option>Internship / Opportunity</option><option>Project Feedback</option><option>Other</option></select>
+      </label>
+      <label>Message<textarea name="msg" rows="5" required></textarea></label>
+      <button class="send" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Intisar Uddin Akib · Dhaka, Bangladesh</footer>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const menu=$('#menu');
+$('#openMenu').onclick=()=>menu.classList.add('open');
+$('#closeMenu').onclick=()=>menu.classList.remove('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+addEventListener('scroll',()=>$('header').classList.toggle('solid',scrollY>40));
+$('#yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const lb=$('#lb');
+document.querySelectorAll('.gallery img').forEach(i=>i.onclick=()=>{lb.querySelector('img').src=i.src;lb.classList.add('open')});
+lb.onclick=()=>lb.classList.remove('open');
+addEventListener('keydown',e=>{if(e.key==='Escape'){lb.classList.remove('open');menu.classList.remove('open')}});
+$('#cform').onsubmit=e=>{
+  e.preventDefault();
+  const f=new FormData(e.target);
+  const body=`Name: ${f.get('name')}\nEmail: ${f.get('email')}\n\n${f.get('msg')}`;
+  location.href=`mailto:intisar.akib@gmail.com?subject=${encodeURIComponent('Portfolio: '+f.get('type'))}&body=${encodeURIComponent(body)}`;
+};
+</script>
+</body>
+</html>
